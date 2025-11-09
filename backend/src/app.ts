@@ -5,7 +5,7 @@ import {loadFaqs} from "./lib/data-loader";
 import {retry} from "./lib/util";
 import {FAQ, HttpError} from "./types/types";
 import {searchFAQ} from "./controllers/faqController";
-
+import loggerMiddleware from "./logger";
 
 const DATA: FAQ[] = retry(loadFaqs);
 
@@ -15,6 +15,7 @@ const port = 3001;
 app.use(cors());
 app.use(express.json());
 app.use(helmet());
+app.use(loggerMiddleware);
 
 app.get('/', (req, res) => {
     res.send('Server is running');
