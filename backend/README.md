@@ -86,28 +86,3 @@ backend/
   Response: `{ data: [...], message: "Success" }`
 
 ---
-
-## 🖥️ Frontend
-
-*This README is focused on the backend. If you want to merge with your frontend project's readme, place the backend and frontend documentation under clearly marked sections.*
-
-Example:
-```
-# Mini Full Stack Search App
-
-## Backend (`/backend`)
-<---- this backend readme content here ---->
-
-## Frontend (`/frontend`)
-<---- your frontend readme content here ---->
-```
-
----
-
-## 📄 License
-
-[MIT](LICENSE) (or your license here)
-
----
-
-**Feel free to adjust or expand this README to match your workflow, deployment, or project-specific needs!**
